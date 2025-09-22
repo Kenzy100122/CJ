@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Announcements | Athlete Portal</title>
+  <link rel="stylesheet" href="announcement.css" />
+  <link rel="icon" href="Images/SAITComradesLOGO.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="athlete-sidebar active">
+    <div class="athlete-sidebar-header">
+      <img src="Images/SAITComradesLOGO.png" alt="SAIT Logo">
+      <h2>ATHLETE PORTAL</h2>
+      <button class="athlete-close-btn">✖</button>
+    </div>
+    <nav class="athlete-sidebar-links">
+      <a href="atheleteportal.html"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a>
+      <a href="training-schedule.html"><i class="fas fa-dumbbell"></i> <span>Training Schedule</span></a>
+      <a href="announcement.html" class="active"><i class="fas fa-bullhorn"></i> <span>Announcements</span></a>
+      <a href="resources.html"><i class="fas fa-folder"></i> <span>Resources</span></a>
+      <a href="about us.html"><i class="fas fa-users"></i> <span>About Us</span></a>
+      <a href="login.html"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+    </nav>
+  </aside>
+
+  <!-- Top Navbar -->
+  <header class="top-navbar">
+    <button class="athlete-menu-toggle"><i class="fas fa-bars"></i></button>
+    <div class="user-info">
+      <span>KEN SALON</span>
+      <img src="Images/Assisstantcoach.jpg" alt="Profile">
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <h1>Announcements</h1>
+
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" placeholder="Search announcements..." id="searchInput" />
+        <i class="fas fa-search"></i>
+      </div>
+
+      <!-- Announcements Grid -->
+      <div class="announcements-grid" id="announcementsGrid">
+        <div class="announcement-card">
+          <h3>Training Schedule Update</h3>
+          <p>The training schedule for September has been updated. Check the portal for details.</p>
+          <span class="date">Sept 10, 2025</span>
+        </div>
+        <div class="announcement-card">
+          <h3>Upcoming Marathon</h3>
+          <p>All athletes are encouraged to join the annual city marathon next month.</p>
+          <span class="date">Sept 12, 2025</span>
+        </div>
+        <div class="announcement-card">
+          <h3>New Nutrition Plan</h3>
+          <p>Nutrition plans have been updated for all athletes. Consult your coach for details.</p>
+          <span class="date">Sept 14, 2025</span>
+        </div>
+        <div class="announcement-card">
+          <h3>Health Checkup</h3>
+          <p>Athletes must attend the annual health checkup scheduled on Sept 20, 2025.</p>
+          <span class="date">Sept 15, 2025</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="announcement.js"></script>
+</body>
+</html>

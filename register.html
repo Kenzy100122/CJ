@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register | SAIT Comrades</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Images/SAITComradesLOGO.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <a href="index.html" class="logo">
+    <img src="Images/SAITComradesLOGO.png" alt="SAIT Logo">
+    <h2>SAIT COMRADES</h2>
+  </a>
+  <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="about us.html">About Us</a>
+    <a href="login.html" class="login-btn">LOG IN</a>
+  </nav>
+</header>
+
+<!-- Register Form -->
+<main class="register-container">
+  <form class="register-form" onsubmit="return handleRegister(event)">
+    <h2>Create Account</h2>
+
+    <div class="error-message" id="error-message"></div>
+    <div class="success-message" id="success-message"></div>
+
+    <div class="input-icon">
+      <i class="fas fa-user"></i>
+      <input type="text" placeholder="Full Name" required />
+    </div>
+
+    <div class="input-icon">
+      <i class="fas fa-envelope"></i>
+      <input type="email" placeholder="Email Address" required />
+    </div>
+
+    <div class="input-icon">
+      <i class="fas fa-phone"></i>
+      <input type="text" placeholder="Contact Number" required oninput="validateNumber(this)" maxlength="11" />
+    </div>
+
+    <div class="input-icon">
+      <i class="fas fa-user-tag"></i>
+      <input type="text" placeholder="Username" required />
+    </div>
+
+    <div class="input-icon password-wrapper">
+      <i class="fas fa-lock"></i>
+      <input type="password" id="password" placeholder="Password" required />
+      <i class="fas fa-eye toggle-password" onclick="togglePassword('password', this)"></i>
+    </div>
+
+    <div class="input-icon password-wrapper">
+      <i class="fas fa-lock"></i>
+      <input type="password" id="confirm-password" placeholder="Confirm Password" required />
+      <i class="fas fa-eye toggle-password" onclick="togglePassword('confirm-password', this)"></i>
+    </div>
+
+    <button type="submit">Register</button>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </form>
+</main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

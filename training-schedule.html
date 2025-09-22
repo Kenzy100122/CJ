@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Athlete Dashboard | SAIT Comrades</title>
+  <link rel="stylesheet" href="styletraining.css" />
+  <link rel="icon" href="Images/SAITComradesLOGO.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+   <!-- Sidebar -->
+  <aside class="athlete-sidebar active">
+    <div class="athlete-sidebar-header">
+      <img src="Images/SAITComradesLOGO.png" alt="SAIT Logo">
+      <h2>ATHLETE PORTAL</h2>
+      <button class="athlete-close-btn">✖</button>
+    </div>
+    <nav class="athlete-sidebar-links">
+      <a href="atheleteportal.html" ><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a>
+      <a href="training-schedule.html" class="active"><i class="fas fa-dumbbell"></i> <span>Training Schedule</span></a>
+      <a href="announcement.html"><i class="fas fa-bullhorn"></i> <span>Announcements</span></a>
+      <a href="resources.html"><i class="fas fa-folder"></i> <span>Resources</span></a>
+      <a href="about us.html"><i class="fas fa-users"></i> <span>About Us</span></a>
+      <a href="login.html"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+    </nav>
+  </aside>
+
+  <!-- Top Navbar -->
+  <header class="top-navbar">
+    <button class="athlete-menu-toggle"><i class="fas fa-bars"></i></button>
+    <div class="user-info">
+      <span>KEN SALON</span>
+      <img src="Images/Assisstantcoach.jpg" alt="Profile">
+    </div>
+  </header>
+
+  <main>
+    <section class="controls">
+      <input type="text" id="searchTraining" placeholder="Search Training..." />
+      <select id="filterCoach">
+        <option value="all">All Coaches</option>
+        <option value="cj">Head Coach CJ</option>
+        <option value="ken">Assistant Coach Ken</option>
+        <option value="unknown">Assistant Coach Unknown</option>
+      </select>
+      <select id="filterDay">
+        <option value="all">All Days</option>
+        <option value="monday">Monday</option>
+        <option value="tuesday">Tuesday</option>
+        <option value="wednesday">Wednesday</option>
+        <option value="thursday">Thursday</option>
+        <option value="friday">Friday</option>
+      </select>
+    </section>
+
+    <section class="schedule-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Training</th>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Coach</th>
+          </tr>
+        </thead>
+        <tbody id="scheduleBody">
+          <tr data-training="Strength Training" data-coach="cj" data-day="monday">
+            <td>Strength Training</td>
+            <td>Monday</td>
+            <td>7:00 AM - 9:00 AM</td>
+            <td>Head Coach CJ</td>
+          </tr>
+          <tr data-training="Cardio Session" data-coach="ken" data-day="tuesday">
+            <td>Cardio Session</td>
+            <td>Tuesday</td>
+            <td>8:00 AM - 10:00 AM</td>
+            <td>Assistant Coach Ken</td>
+          </tr>
+          <tr data-training="Agility Drills" data-coach="unknown" data-day="wednesday">
+            <td>Agility Drills</td>
+            <td>Wednesday</td>
+            <td>4:00 PM - 6:00 PM</td>
+            <td>Assistant Coach Unknown</td>
+          </tr>
+          <tr data-training="Endurance Run" data-coach="cj" data-day="friday">
+            <td>Endurance Run</td>
+            <td>Friday</td>
+            <td>6:00 AM - 8:00 AM</td>
+            <td>Head Coach CJ</td>
+          </tr>
+          <tr data-training="Team Strategy" data-coach="ken" data-day="thursday">
+            <td>Team Strategy</td>
+            <td>Thursday</td>
+            <td>3:00 PM - 5:00 PM</td>
+            <td>Assistant Coach Ken</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script training.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fb;
+  color: #333;
+}
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Container */
+.container {
+  padding: 100px 20px 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Search Bar */
+.search-bar {
+  position: relative;
+  margin: 0 auto 40px;
+  max-width: 400px;
+}
+.search-bar input {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+.search-bar i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+/* Announcements Grid */
+.announcements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* smaller cards */
+  gap: 25px;
+  justify-items: center; /* center cards */
+  padding: 0 10px;
+}
+
+/* Announcement Card */
+.announcement-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 280px; /* smaller card width */
+  text-align: left;
+}
+
+.announcement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.announcement-card h3 {
+  margin-top: 0;
+  color: #1a1a2e;
+  font-size: 1.1rem;
+}
+
+.announcement-card p {
+  color: #555;
+  margin: 10px 0;
+  font-size: 0.95rem;
+}
+
+.announcement-card .date {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fb;
+  color: #333;
+}
+
+/* Sidebar */
+.athlete-sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #1a1a2e;
+  color: #fff;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+.athlete-sidebar.active {
+  left: 0;
+}
+.athlete-sidebar-header {
+  text-align: center;
+  padding: 15px;
+  position: relative;
+}
+.athlete-sidebar-header img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+.athlete-sidebar-header h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+.athlete-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.athlete-sidebar-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.athlete-sidebar-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+.athlete-sidebar-links a:hover,
+.athlete-sidebar-links a.active {
+  background: #162447;
+}
+
+/* Top Navbar */
+.top-navbar {
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 900;
+}
+.top-navbar .athlete-menu-toggle {
+  font-size: 22px;
+  background: #1a1a2e;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.top-navbar .user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.top-navbar .user-info span {
+  font-weight: 600;
+}
+.top-navbar .user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0077b6;
+}

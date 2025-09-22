@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resources | Athlete Portal</title>
+  <link rel="stylesheet" href="styleesources.css" />
+  <link rel="icon" href="Images/SAITComradesLOGO.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="athlete-sidebar active">
+    <div class="athlete-sidebar-header">
+      <img src="Images/SAITComradesLOGO.png" alt="SAIT Logo">
+      <h2>ATHLETE PORTAL</h2>
+      <button class="athlete-close-btn">✖</button>
+    </div>
+    <nav class="athlete-sidebar-links">
+      <a href="atheleteportal.html"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a>
+      <a href="training-schedule.html"><i class="fas fa-dumbbell"></i> <span>Training Schedule</span></a>
+      <a href="announcement.html"><i class="fas fa-bullhorn"></i> <span>Announcements</span></a>
+      <a href="resources.html" class="active"><i class="fas fa-folder"></i> <span>Resources</span></a>
+      <a href="about us.html"><i class="fas fa-users"></i> <span>About Us</span></a>
+      <a href="login.html"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+    </nav>
+  </aside>
+
+  <!-- Top Navbar -->
+  <header class="top-navbar">
+    <button class="athlete-menu-toggle"><i class="fas fa-bars"></i></button>
+    <div class="user-info">
+      <span>KEN SALON</span>
+      <img src="Images/Assisstantcoach.jpg" alt="Profile">
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="resources-container">
+      <h1>Resources</h1>
+      <div class="resource-cards">
+        <div class="card">
+          <i class="fas fa-file-pdf"></i>
+          <h3>Training Manual</h3>
+          <p>Comprehensive training guide for athletes. Learn techniques and exercises step by step for better performance.</p>
+          <a href="#" class="resource-btn" data-resource="Training Manual">Download</a>
+        </div>
+        <div class="card">
+          <i class="fas fa-video"></i>
+          <h3>Workout Videos</h3>
+          <p>Step-by-step exercise tutorials to follow along and improve your training sessions at home or gym.</p>
+          <a href="#" class="resource-btn" data-resource="Workout Videos">View</a>
+        </div>
+        <div class="card">
+          <i class="fas fa-file-alt"></i>
+          <h3>Nutrition Plan</h3>
+          <p>Healthy meal plans designed for athletes to boost energy, improve recovery, and maintain performance.</p>
+          <a href="#" class="resource-btn" data-resource="Nutrition Plan">Download</a>
+        </div>
+        <div class="card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Progress Tracker</h3>
+          <p>Track your training progress easily with charts and analytics to monitor your improvements over time.</p>
+          <a href="#" class="resource-btn" data-resource="Progress Tracker">Open</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="script resources.js"></script>
+</body>
+</html>

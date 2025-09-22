@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Athlete Dashboard | SAIT Comrades</title>
+  <link rel="stylesheet" href="styleatheleteportal.css" />
+  <link rel="icon" href="Images/SAITComradesLOGO.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="athlete-sidebar active">
+    <div class="athlete-sidebar-header">
+      <img src="Images/SAITComradesLOGO.png" alt="SAIT Logo">
+      <h2>ATHLETE PORTAL</h2>
+      <button class="athlete-close-btn">✖</button>
+    </div>
+    <nav class="athlete-sidebar-links">
+      <a href="athleteportal.html" class="active"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a>
+      <a href="training-schedule.html"><i class="fas fa-dumbbell"></i> <span>Training Schedule</span></a>
+      <a href="announcement.html"><i class="fas fa-bullhorn"></i> <span>Announcements</span></a>
+      <a href="resources.html"><i class="fas fa-folder"></i> <span>Resources</span></a>
+      <a href="about us.html"><i class="fas fa-users"></i> <span>About Us</span></a>
+      <a href="login.html"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+    </nav>
+  </aside>
+
+  <!-- Top Navbar -->
+  <header class="top-navbar">
+    <button class="athlete-menu-toggle"><i class="fas fa-bars"></i></button>
+    <div class="user-info">
+      <span>KEN SALON</span>
+      <img src="Images/Assisstantcoach.jpg" alt="Profile">
+    </div>
+  </header>
+
+  <!-- Dashboard Content -->
+  <main>
+    <div class="dashboard-header">
+      <h1>Welcome Back, Athlete!</h1>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="dashboard-cards">
+      <div class="card"><h3>Completed Sessions</h3><p>24</p></div>
+      <div class="card"><h3>Upcoming Events</h3><p>3</p></div>
+      <div class="card"><h3>Personal Best</h3><p>5:20 min/km</p></div>
+      <div class="card"><h3>Team Rank</h3><p>#2</p></div>
+    </div>
+
+    <!-- Training Progress Chart -->
+    <div class="chart-container">
+      <h3>Training Progress</h3>
+      <canvas id="progressChart"></canvas>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script atheleteportal.js"></script>
+</body>
+</html>

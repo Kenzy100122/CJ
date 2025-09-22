@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | SAIT Comrades</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Images/SAITComradesLOGO.png" type="image/png" />
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <a href="index.html" class="logo">
+    <img src="Images/SAITComradesLOGO.png" alt="SAIT Logo">
+    <h2>SAIT COMRADES</h2>
+  </a>
+  <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="about us.html">About Us</a>
+    <a href="login.html" class="login-btn">LOG IN</a>
+  </nav>
+</header>
+
+<!-- Login Form Area -->
+<main class="login-main">
+  <div class="login-box">
+    <div class="login-left">
+      <div class="login-welcome">
+        <img src="Images/SAITComradesLOGO.png" alt="Login Visual" />
+      </div>
+    </div>
+
+    <div class="login-right">
+      <h1>LOG IN</h1>
+      <!-- ✅ Added onsubmit to trigger handleLogin -->
+      <form class="login-form" onsubmit="return handleLogin(event)">
+        <div class="error-message" id="error-message"></div> <!-- ✅ Added error box -->
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" required />
+        <select required>
+          <option value="" disabled selected>Select Role</option>
+          <option value="athlete">Athlete Account</option>
+          <option value="assistant_coach">Assistant Coach Account</option>
+          <option value="head_coach">Head Coach Account</option>
+        </select>
+        <button type="submit">LOG IN</button>
+      </form>
+
+      <div class="register-link">
+        <p>Don't have an account?</p>
+        <a href="register.html">
+          <button type="button" class="register-btn">REGISTER</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
